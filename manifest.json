@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+	"name": "Fix Glo 6",
+	"version": "1.0",
+	"applications": {
+	    "gecko": {
+		"id": "fixglo@mozilla.org"
+	    }
+	},
+
+	"icons": {
+	    "48": "icons/fixglo-48.png"
+	},
+
+	"description": "Remove words-break on glo.globallogic.com forum",
+
+	"content_scripts": [
+	    {
+		"matches": ["*://glo.globallogic.com/*"],
+		"js": ["fixglo.js"]
+	    }
+	],
+
+	"page_action": {
+	    "default_icon": "icons/off.svg",
+	    "browser_style": true
+	},
+
+	"permissions": [
+	    "activeTab",
+	    "tabs"
+	]
+}
