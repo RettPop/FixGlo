@@ -14,6 +14,10 @@
 
 	"description": "Remove words-break on glo.globallogic.com forum",
 
+    "background": {
+        "scripts": ["showicon.js"]
+    },
+
 	"content_scripts": [
 	    {
 		"matches": ["*://glo.globallogic.com/*"],
@@ -22,7 +26,7 @@
 	],
 
 	"page_action": {
-	    "default_icon": "icons/off.svg",
+	    "default_icon": "icons/fixglo-48.png",
 	    "browser_style": true
 	},
 
