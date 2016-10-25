@@ -9,8 +9,7 @@
     },
 
     "icons": {
-        "70": "icons/fixglo-70.png",
-        "48": "icons/fixglo-48.png"
+        "48": "icons/fixglo.svg"
     },
 
     "description": "Fix some CSS issues on glo.globallogic.com forum",
@@ -27,7 +26,7 @@
     ],
 
     "page_action": {
-        "default_icon": "icons/fixglo-48.png",
+        "default_icon": "icons/fixglo.svg",
         "browser_style": true
     },
 
