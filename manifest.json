@@ -1,37 +1,38 @@
 {
     "manifest_version": 2,
-	"name": "Fix Glo 6",
-	"version": "1.0",
-	"applications": {
-	    "gecko": {
-		"id": "fixglo@mozilla.org"
-	    }
-	},
+    "name": "Fix GL.Glo",
+    "version": "1.0",
+    "applications": {
+        "gecko": {
+            "id": "fixglo@sapisoft.com"
+        }
+    },
 
-	"icons": {
-	    "48": "icons/fixglo-48.png"
-	},
+    "icons": {
+        "48": "icons/fixglo-70.png"
+    },
 
-	"description": "Remove words-break on glo.globallogic.com forum",
+    "description": "Fix some CSS issues on glo.globallogic.com forum",
 
     "background": {
         "scripts": ["showicon.js"]
     },
 
-	"content_scripts": [
-	    {
-		"matches": ["*://glo.globallogic.com/*"],
-		"js": ["fixglo.js"]
-	    }
-	],
+    "content_scripts": [
+        {
+            "matches": ["*://glo.globallogic.com/*"],
+            "js": ["fixglo.js"]
+        }
+    ],
 
-	"page_action": {
-	    "default_icon": "icons/fixglo-48.png",
-	    "browser_style": true
-	},
+    "page_action": {
+        "default_icon": "icons/fixglo-70.png",
+        "browser_style": true
+    },
 
-	"permissions": [
-	    "activeTab",
-	    "tabs"
-	]
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "notifications"
+    ]
 }
