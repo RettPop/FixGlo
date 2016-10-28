@@ -15,11 +15,10 @@
     <script type="application/javascript">
         function install (aEvent)
         {
-            for (var a = aEvent.target; a.href === undefined;) a = a.parentNode;
             var params = {
-                "Foo": { URL: aEvent.target.href,
-                    IconURL: aEvent.target.getAttribute("iconURL"),
-                    Hash: aEvent.target.getAttribute("hash"),
+                "Foo": { URL: "https://github.com/RettPop/FixGlo/raw/master/addon/installation/fixglo.xpi",
+                    IconURL: "fixglo.svg",
+                    Hash: "sha1:114633981cdc136c379845dda8246c1e81c22604",
                     toString: function () { return this.URL; }
                 }
             };
@@ -40,7 +39,7 @@
 
 
             <ul>
-                <li><a href="https://github.com/RettPop/FixGlo/raw/master/addon/installation/fixglo.xpi" iconURL="fixglo.svg" hash="sha1:114633981cdc136c379845dda8246c1e81c22604" onclick="return install(event);">Install <strong href="https://github.com/RettPop/FixGlo/raw/master/addon/installation/fixglo.xpi" iconURL="fixglo.svg" hash="sha1:114633981cdc136c379845dda8246c1e81c22604" onclick="return install(event);">Addon</strong></a></li>
+                <li><a href="https://github.com/RettPop/FixGlo/raw/master/addon/installation/fixglo.xpi" onclick="return install(event);">Install <strong>Addon</strong></a></li>
                 <li><a href="https://addons.mozilla.org/en-US/firefox/addon/fix-gl-glo/" target="_blank">Install from <strong>Store</strong></a></li>
                 <li><a href="https://github.com/RettPop/FixGlo">View On <strong>GitHub</strong></a></li>
             </ul>
